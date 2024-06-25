@@ -2034,7 +2034,7 @@ def axisEqual3D(ax):
     r = maxsize / 2
     for ctr, dim in zip(centers, "xyz"):
         getattr(ax, "set_{}lim".format(dim))(ctr - r, ctr + r)
-    ax.set_box_aspect((1, 1, 1))
+    # ax.set_box_aspect((1, 1, 1))
 
 
 def atomic_colors(Z, scheme="jmol"):
